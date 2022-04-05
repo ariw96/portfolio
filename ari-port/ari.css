@@ -1,0 +1,204 @@
+:root {
+    --primary-color: #27c7bc;
+    --secondary-color: #f99500;
+    --light-color: #f3f3f3;
+    --dark-color: #333;
+    --max-width: 1100px;
+}
+
+.category {
+    --sports-color: #f99500;
+    --ent-color: #a66bbe;
+    --tech-color: #009cff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#img {
+    width: 100%;
+    z-index: -1;
+}
+
+h1,
+{
+    font-family: 'Staatliches', cursive;
+    margin-bottom: .55rem;
+    line-height: 1.5;
+}
+
+
+/* Utility */
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background: var(--dark-color);
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-light {
+    background: var(--light-color)
+}
+
+.btn-primary {
+    background: var(--dark-color);
+    border-radius: 50%;
+}
+
+.btn-secondary {
+    background: var(--secondary-color)
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.l-heading {
+    font-size: 3rem;
+}
+
+.list li {
+    padding: .5rem 0;
+    border-bottom: #555 dotted 1px;
+    width: 90%;
+}
+
+.list li a:hover {
+    color: var(--primary-color) !important;
+}
+
+
+/* Navigation */
+
+#main-nav {
+    background-color: var(--secondary-color);
+    background-image: url(card-backround.jpg);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#main-nav .container {
+    display: grid;
+    grid-template-columns: 6fr 3fr 2fr;
+    padding: 4rem;
+    align-items: center;
+}
+
+#main-nav .logo {
+    width: 180px;
+}
+
+#main-nav ul {
+    justify-self: end;
+    display: flex;
+}
+
+#main-nav ul li a {
+    padding: 0.75rem;
+    font-weight: bold;
+}
+
+#main-nav ul li a.current {
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+}
+
+#main-nav ul li a:hover {
+    background: var(--light-color);
+    color: var(--dark-color);
+}
+
+#main-nav .social {
+    justify-self: center;
+    background-color: #f99500;
+    border-radius: 10%;
+}
+
+#main-nav .social i:first-child {
+    color: rgb(234, 231, 239);
+    margin-right: .5rem;
+}
+
+
+/* Showcase */
+
+#showcase {
+    color: rgb(237, 233, 242);
+    background-image: url(state\ of\ mindfade.jpeg);
+    padding: 2rem;
+    position: absolute;
+    width: 100vw;
+    font-weight: bolder;
+    bottom: 0;
+}
+
+#showcase .showcase-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+#showcase .showcase-content {
+    z-index: 1;
+    background-image: url(moon.jpg);
+    padding: 3rem;
+    border-radius: 50%;
+    height: 18rem;
+    width: 18rem;
+}
+
+#showcase .showcase-content p {
+    margin-bottom: 1rem;
+}
+
+
+/* Footer */
+
+#main-footer {
+    color: #fff;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #444;
+    width: 100vw;
+}

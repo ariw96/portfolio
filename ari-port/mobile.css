@@ -1,0 +1,39 @@
+#main-nav ul {
+    display: none;
+}
+
+#main-nav .social {
+    /* justify-self: center; */
+    /* background-color:#f99500; */
+    border-radius: 10%;
+    display: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#showcase {
+    color: rgb(25, 25, 26);
+    background-image: url(moon.jpg);
+    /* padding: 2rem; */
+    position: absolute;
+    width: 100vw;
+    font-weight: bolder;
+}
+
+#showcase .showcase-content {
+    z-index: 1;
+    font-weight: 900;
+    background-image: none;
+    padding: 3rem;
+    border-radius: 50%;
+    height: 18rem;
+    width: 18rem;
+}
+
+#main-nav {
+    background-color: var(--secondary-color);
+    background-image: url(state\ of\ mind.jpeg);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
